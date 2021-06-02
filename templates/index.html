@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="portfolio site for codebreakers" name="code breakers">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/images/logo.png">
+    
+
+    <title>Anjaan sketches</title>
+
+    <link href="{{url_for( 'static', filename='design.css' )}}" rel="stylesheet">
+</head>
+
+<body class="minimal">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    <!-- Add your content of header -->
+    <header>
+        <nav class="navbar  navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- TOP MENU BAR -->
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav " >
+                        <li><a href="/" title=""> HOME</a></li>
+                        <li><a href="./works.html" title="">WORKS</a></li>
+                        <li><a href="./about.html" title="">ABOUT</a></li>
+                        <li><a href="./contact.html" title="">CONTACT</a></li>
+
+                    </ul>
+
+
+                </div>
+
+                
+
+            </div>
+        </nav>
+    </header>
+    <!-- Add your site or app content here -->
+    <div class="hero-full-container background-image-container white-text-container" style="background-image: linear-gradient(to top, rgba(51, 51, 51, 0.52), rgba(0, 0, 0, 0.73)),url('./static/assets/images/background.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="hero-full-wrapper">
+                        <div class="text-content">
+                            <h1>Hii !<br>
+                                <span id="typed-strings">
+                  <span>You'r welcome</span>
+                                <span>to my website</span>
+                                <span>Anjan Kumar here</span>
+                                </span>
+                                <span id="typed"></span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            type();
+            movingBackgroundImage();
+        });
+    </script>
+
+
+    <script src={{url_for( 'static', filename='main.js' )}}></script>
+</body>
+
+</html>
